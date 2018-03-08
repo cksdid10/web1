@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>이슈관리</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*#jb-container {*/
+            /*width: 940px;*/
+            /*margin: 0px auto;*/
+            /*padding: 20px;*/
+            /*border: 1px solid #bcbcbc;*/
+        /*}*/
+        .pj-header {
+            /*color: white;*/
+            /*background-color: black;*/
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        .pj-body {
+            /*width: 580px;*/
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        .pj-list {
+            /*padding: 20px;*/
+            width: 940px;
+            margin-bottom: 20px;
+            /*border: 1px solid #bcbcbc;*/
+            /*float: left;*/
+        }
+        .pj-Search{
+            position: absolute;
+            left: 1100px;
+            /*border: 1px solid #bcbcbc;*/
+            /*float: inherit;*/
+        }
+        .pj-project {
+            /*padding: 20px;*/
+            margin-bottom: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        /*#jb-sidebar {*/
+            /*width: 260px;*/
+            /*padding: 20px;*/
+            /*margin-bottom: 20px;*/
+            /*float: right;*/
+            /*border: 1px solid #bcbcbc;*/
+        /*}*/
+        .pj-footer {
+            clear: both;
+            padding: 20px;
+            border: 1px solid #bcbcbc;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="jb-container">-->
+    <header>
+        <div id="pj-header" class="pj-header" >
+            <h1>프로젝트 관리 페이지</h1>
+            <p>프로젝트 생성</p>
+        </div>
+    </header>
+    <div id="pj-body" class="pj-body">
+        <form>
+            <div class="pull-right hidden-lg hidden-md hidden-sm">
+                <a class="btn btn-default" data-toggle="collapse" data-target=".board-bottom-search-collapse"><i class='fa fa-search'></i></a>
+            </div>
+            <div class="pull-right collapse navbar-collapse board-bottom-search-collapse">
+                <div class="form-group">
+                    <label class="sr-only" for="sfl">sfl</label>
+                    <select name=sfl class="form-control">
+                        <option value='wr_subject'>프로젝트명</option>
+                        <option value='wr_content'>담당자</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="stx">stx</label>
+                    <input name=stx maxlength=15 size=10 itemname="검색어"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">검색</button>
+                </div>
+            </div>
+        <div id="pj-list" class="pj-list">
+        <p>프로젝트 리스트</p>
+        </div>
+        <table border="1" width="500" class="table">
+            <thead>
+                <tr>
+                    <th>프로젝트명</th>
+                    <th>담당자</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                <tr>
+                    <td>쓰리기앱</td>
+                    <td>강찬양</td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+        <a class="btn btn-default">프로젝트 생성</a>
+            <div class="container">
+                <nav>
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
